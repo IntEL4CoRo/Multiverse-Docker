@@ -2,7 +2,8 @@
 source /home/Multiverse/giskard_ws/devel/setup.bash
 
 roscore &
-roslaunch --wait rvizweb rvizweb.launch &
+
+/bin/bash /home/binder/test/test.sh &
 
 # Use xvfb virtual display when there is no display connected.
 if [ -n "$DISPLAY" ]; then

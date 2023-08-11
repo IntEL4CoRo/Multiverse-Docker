@@ -28,7 +28,7 @@ RUN pip install --no-cache-dir notebook==6.4.12 jupyterlab==3.6.5 \
         jupyter-server-proxy jupyterlab-git jlab-enhanced-cell-toolbar \
         autobahn gnupg twisted cbor2 empy ipywidgets  \
         pymongo Pillow pycryptodomex simplejpeg tqdm \
-        https://raw.githubusercontent.com/yxzhan/jupyterlab-rviz/master/release/jupyterlab_rviz-0.2.5.tar.gz
+        https://raw.githubusercontent.com/yxzhan/jupyterlab-rviz/master/release/jupyterlab_rviz-0.2.6.tar.gz
 
 # Allow user ${NB_USER} write some directories
 WORKDIR /home/Multiverse/giskard_ws

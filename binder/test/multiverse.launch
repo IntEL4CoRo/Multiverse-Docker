@@ -1,0 +1,11 @@
+<launch>
+  <include file="$(find multiverse_server)/launch/multiverse_server.launch">
+  </include>
+  
+  <include file="$(find tiago_dual_in_apartment)/launch/mujoco.launch">
+    <arg name="headless" value="true" />
+  </include>
+
+  <include file="$(find tiago_dual_in_apartment)/launch/multiverse_client.launch">
+  </include>
+</launch>

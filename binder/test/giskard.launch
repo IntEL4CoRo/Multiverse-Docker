@@ -1,0 +1,17 @@
+<launch>
+  <arg name="has_display" default="false"/>
+
+  <include file="$(find tiago_dual_control)/launch/tiago_dual_giskard.launch">
+  </include>
+  
+  <group if="$(arg has_display)">
+    <include file="$(find tiago_dual_in_apartment)/launch/rviz.launch">
+    </include>
+  </group>
+
+  <include file="$(find rvizweb)/launch/rvizweb.launch">
+    <arg name="config_file" value="/home/binder/rvizweb-config.json" />
+    <arg name="interactive_markers" value="true" />
+    <arg name="interactive_markers_topic" value="/eef_control" />
+  </include>
+</launch>
