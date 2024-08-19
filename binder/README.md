@@ -39,7 +39,5 @@ The default entrypoint will start the Roscore and the following ROS nodes:
 2. ***[compress_textures.py](./compress_textures.py):*** A Python script to compress the 3d model texture files.
 3. ***[entrypoint.sh](./entrypoint.sh):*** Entrypoint of the docker image.
 4. ***[jupyter-settings.json](./jupyter-settings.json):*** Jupyterlab settings (e.g., Themes, Font size, Default indent and so on).
-5. ***[rvizweb-config.json](./rvizweb-config.json):*** Rvizweb configuration file.
 6. ***[docker-compose.yml](./docker-compose.yml):*** For testing the docker image locally.
 7. ***[run_local.sh](./run_local.sh):*** For testing the docker image locally.
-8. ***[me/](./me):*** A temporar workaround to fix incorrect mesh resource url of Marker Array (Robot Ghost). (At the moment the mesh_resource urls are in such format: `file:///home/Multiverse/giskard_ws/src/giskardpy/tmp/tiago_dual/\*.obj`. Should be replace to `package://giskardpy/tmp/tiago_dual/\*.obj`)
