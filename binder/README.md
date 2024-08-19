@@ -24,14 +24,6 @@ docker compose build
 
 - [Link to the binderhub](https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/main)
 
-## Usage
-
-The default entrypoint will start the Roscore and the following ROS nodes:
-
-- `/ros_board`
-- `/rosbridge_websocket`
-- `/roswww`
-- `/tf2_web_republisher`
 
 ## Files Descriptions
 
